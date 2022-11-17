@@ -1,0 +1,248 @@
+$colors: (
+        main: #000, // Body Main Text
+        main1: #2b2b2b, // Body Main Text
+        main2: #4d4d4d, // Body Main Text
+        main3: #999, // Body Main Text
+        
+        primary: #36ADB2,
+        primary2: #2c989c, 
+        primary3: #92abae,
+        primaryTrans20: rgba(70, 174, 178, 0.2),
+        
+        primaryLight: #dcecec,
+        primaryDark: #1d4143,
+
+        secondary: #ef4430,
+
+        dark: #414141,
+
+        light0: #edf4f5,
+        light2: #a1a1a1,
+        light3: #dce5e6,
+        light4: #e8e8e8,
+        light5: #dbdbdb,
+
+
+        // mainGradColor1: #039C78, // Gradient Color 1 Intro Bg 
+        // mainGradColor2: #053868, // Gradient Color 2 Intro Bg
+
+        blackColor: #000,
+        whiteColor: #fff,
+
+        selectionBg: #2b2b2b,
+        selectionColor: #fff,
+        scrollTrackBg: #f1f1f1,
+        scrollThumbBg: #888,
+        scrollThumbHoverBg: #555,
+);
+
+$transition: (
+  main: all 0.5s ease
+);
+
+::-moz-selection{color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
+::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
+::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+body, .text-dark{color: map-get($colors, main)!important;}
+.mega-list .row > div > ul > li ul li a{color: map-get($colors, main2 )!important;}
+.mega-list .row > div > ul > li ul li a:hover{color: map-get($colors, main3 )!important;}
+
+.bg-primary, .btn-primary
+{
+  background: map-get($colors, primary) !important;
+}
+a.bg-primary:hover, a.bg-primary:focus{background: map-get($colors, primary2 )!important;}
+.text-primary{
+  color: map-get($colors, primary) !important;
+}
+a.text-primary:hover, a.text-primary:focus{color: map-get($colors, primary2 )!important;}
+.border-primary{
+  border-color: map-get($colors, primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color:  map-get($colors, secondary) !important;
+}
+.text-secondary{
+  color: map-get($colors, secondary) !important;
+}
+.border-secondary{
+  border-color:  map-get($colors, secondary) !important;
+}
+.btn-primary, .btn-secondary, .btn-primary3{
+  color: map-get($colors, whiteColor) !important;
+}
+.btn-primary, .btn-secondary, .btn-primary3{border-color: transparent!important;}
+.btn-primary.focus, .btn-primary:focus,
+.btn-primary3.focus, .btn-primary3:focus{box-shadow: 0 0 0 0.2rem map-get($colors, primaryTrans20)!important;}
+.btn-primary3
+{
+  background: map-get($colors, primary3) !important;
+}
+
+.bg-primaryLight{background-color: map-get($colors, primaryLight );}
+
+.btn-dark{background-color: map-get($colors, dark );color:#fff!important;}
+
+.btn-outline-white{background-color: #fff;border: 1px solid map-get($colors, light5 );}
+.btn-outline-white:hover{background-color: map-get($colors, light5 );}
+
+.bg-light0{background-color: map-get($colors, light0 );}
+
+.text-light{color: map-get($colors, main3)!important;}
+a.text-light:hover, a.text-light:focus{color: map-get($colors, main2)!important;}
+.text-light1{color: map-get($colors, main1)!important;}
+a.text-light1:hover, a.text-light1:focus{color: map-get($colors, main)!important;}
+
+/* NavBar */
+.navbar-dark .navbar-nav .nav-link{color: map-get($colors, whiteColor )!important;}
+.mega-list-all{background-color: map-get($colors, light4 );}
+.header-last .navbar-nav > li > a:before{background-color: map-get($colors, primaryDark );}
+
+/* User List */
+.usr-list li a:hover{background-color: map-get($colors, primary );color: map-get($colors, whiteColor )}
+
+/* BreadCrumb */
+.breadcrumb-item a{color: map-get($colors, main2);}
+.breadcrumb-item a:hover{color: map-get($colors, main3);}
+.breadcrumb-item.active{color: map-get($colors, main );}
+.breadcrumb-item+.breadcrumb-item::before{content:'>';}
+
+/* Product Single */
+.product-slider.slider-nav .slick-current .prod-slider-img{border-color: map-get($colors, primary);}
+
+/* Offer Section */
+.offer-section{border-color: map-get($colors, secondary );}
+.offer-sec-tit{background-color: map-get($colors, secondary );}
+
+/* Footer */
+#main-footer{background-color: map-get($colors, primaryDark );}
+
+/* Forms */
+.form-control{border-color: map-get($colors, light3 )!important;}
+.form-control:focus {
+  border-color: map-get($colors, primary ) !important;
+  box-shadow: 0 0 0 0.2rem map-get($colors, primaryTrans20)!important;
+}
+.form-control::placeholder{
+  color: map-get($colors, light2 );
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: map-get($colors, primary );
+}
+#prods-filter .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: map-get($colors, dark );
+}
+
+/* OWL */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{background-color: map-get($colors, secondary );}
+
+.prods-carousel.owl-carousel .owl-nav button.owl-prev,
+.prods-carousel.owl-carousel .owl-nav button.owl-next,
+.slick-arrow{
+  background-color: #fff;border-color: map-get($colors, main3 );
+}
+.prods-carousel.owl-carousel .owl-nav button.owl-prev:after,
+.prods-carousel.owl-carousel .owl-nav button.owl-next:after,
+.slick-arrow:before{
+  color:map-get($colors, primary );
+}
+
+.offer-section .owl-carousel .owl-nav button.owl-prev,
+.offer-section .owl-carousel .owl-nav button.owl-next{
+  background-color: transparent;border-color: map-get($colors, whiteColor);
+}
+
+.offer-section .owl-carousel .owl-nav button.owl-prev:after,
+.offer-section .owl-carousel .owl-nav button.owl-next:after{
+  color:map-get($colors, whiteColor );
+}
+
+/* Paging */
+.page-item .page-link {color: map-get($colors, dark );}
+.page-item.active .page-link {
+  background-color: map-get($colors, dark );
+  border-color: map-get($colors, dark );
+}
+
+/* Addresses */
+.address-field input:checked + label:before{border-color:map-get($colors, primary );}
+.address-field input:checked + label:after{background-color: map-get($colors, primary );}
+
+/* FAQ */
+#faq .card-header .btn:before{color: map-get($colors, primary);}
+#faq .card-body:before{background-color: map-get($colors, primary);}
+
+/* Tracking Orders */
+
+.order-item.stat1 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(left,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -webkit-linear-gradient(left,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -o-linear-gradient(left,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -ms-linear-gradient(left,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: linear-gradient(to right,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#cecece', GradientType=1);
+}
+.order-item.stat2 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -webkit-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -o-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -ms-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: linear-gradient(to right,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#cecece', GradientType=1);
+}
+.order-item.stat3 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -webkit-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -o-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -ms-linear-gradient(left,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: linear-gradient(to right,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#57b777', GradientType=1);
+}
+
+.rtl .order-item.stat1 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(right,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -webkit-linear-gradient(right,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -o-linear-gradient(right,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: -ms-linear-gradient(right,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  background: linear-gradient(to left,  #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#4ec1c7', GradientType=1);
+}
+.rtl .order-item.stat2 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -webkit-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -o-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: -ms-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  background: linear-gradient(to left,  #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#4ec1c7', GradientType=1);
+}
+.rtl .order-item.stat3 .order-sub-head-inner:before{
+  background: #cecece;
+  background: -moz-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -webkit-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -o-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: -ms-linear-gradient(right,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  background: linear-gradient(to left,  #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57b777', endColorstr='#4ec1c7', GradientType=1);
+}
+
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img,
+.header-usr-blk .user-actions img,
+.mega-list-all a i,
+.topbar-first a:hover img,
+.cat-link i{
+  transition: map_get($transition, main);
+}

@@ -1,0 +1,326 @@
+::-moz-selection {
+  color: #fff;
+  background: #2b2b2b;
+}
+
+::selection {
+  color: #fff;
+  background: #2b2b2b;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body, .text-dark {
+  color: #000 !important;
+}
+
+.mega-list .row > div > ul > li ul li a {
+  color: #4d4d4d !important;
+}
+
+.mega-list .row > div > ul > li ul li a:hover {
+  color: #999 !important;
+}
+
+.bg-primary, .btn-primary {
+  background: #36ADB2 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus {
+  background: #2c989c !important;
+}
+
+.text-primary {
+  color: #36ADB2 !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #2c989c !important;
+}
+
+.border-primary {
+  border-color: #36ADB2 !important;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #ef4430 !important;
+}
+
+.text-secondary {
+  color: #ef4430 !important;
+}
+
+.border-secondary {
+  border-color: #ef4430 !important;
+}
+
+.btn-primary, .btn-secondary, .btn-primary3 {
+  color: #fff !important;
+}
+
+.btn-primary, .btn-secondary, .btn-primary3 {
+  border-color: transparent !important;
+}
+
+.btn-primary.focus, .btn-primary:focus,
+.btn-primary3.focus, .btn-primary3:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(70, 174, 178, 0.2) !important;
+          box-shadow: 0 0 0 0.2rem rgba(70, 174, 178, 0.2) !important;
+}
+
+.btn-primary3 {
+  background: #92abae !important;
+}
+
+.bg-primaryLight {
+  background-color: #dcecec;
+}
+
+.btn-dark {
+  background-color: #414141;
+  color: #fff !important;
+}
+
+.btn-outline-white {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+}
+
+.btn-outline-white:hover {
+  background-color: #dbdbdb;
+}
+
+.bg-light0 {
+  background-color: #edf4f5;
+}
+
+.text-light {
+  color: #999 !important;
+}
+
+a.text-light:hover, a.text-light:focus {
+  color: #4d4d4d !important;
+}
+
+.text-light1 {
+  color: #2b2b2b !important;
+}
+
+a.text-light1:hover, a.text-light1:focus {
+  color: #000 !important;
+}
+
+/* NavBar */
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+.mega-list-all {
+  background-color: #e8e8e8;
+}
+
+.header-last .navbar-nav > li > a:before {
+  background-color: #1d4143;
+}
+
+/* User List */
+.usr-list li a:hover {
+  background-color: #36ADB2;
+  color: #fff;
+}
+
+/* BreadCrumb */
+.breadcrumb-item a {
+  color: #4d4d4d;
+}
+
+.breadcrumb-item a:hover {
+  color: #999;
+}
+
+.breadcrumb-item.active {
+  color: #000;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
+/* Product Single */
+.product-slider.slider-nav .slick-current .prod-slider-img {
+  border-color: #36ADB2;
+}
+
+/* Offer Section */
+.offer-section {
+  border-color: #ef4430;
+}
+
+.offer-sec-tit {
+  background-color: #ef4430;
+}
+
+/* Footer */
+#main-footer {
+  background-color: #1d4143;
+}
+
+/* Forms */
+.form-control {
+  border-color: #dce5e6 !important;
+}
+
+.form-control:focus {
+  border-color: #36ADB2 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(70, 174, 178, 0.2) !important;
+          box-shadow: 0 0 0 0.2rem rgba(70, 174, 178, 0.2) !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #a1a1a1;
+}
+
+.form-control::placeholder {
+  color: #a1a1a1;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #36ADB2;
+}
+
+#prods-filter .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #414141;
+}
+
+/* OWL */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  background-color: #ef4430;
+}
+
+.prods-carousel.owl-carousel .owl-nav button.owl-prev,
+.prods-carousel.owl-carousel .owl-nav button.owl-next,
+.slick-arrow {
+  background-color: #fff;
+  border-color: #999;
+}
+
+.prods-carousel.owl-carousel .owl-nav button.owl-prev:after,
+.prods-carousel.owl-carousel .owl-nav button.owl-next:after,
+.slick-arrow:before {
+  color: #36ADB2;
+}
+
+.offer-section .owl-carousel .owl-nav button.owl-prev,
+.offer-section .owl-carousel .owl-nav button.owl-next {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.offer-section .owl-carousel .owl-nav button.owl-prev:after,
+.offer-section .owl-carousel .owl-nav button.owl-next:after {
+  color: #fff;
+}
+
+/* Paging */
+.page-item .page-link {
+  color: #414141;
+}
+
+.page-item.active .page-link {
+  background-color: #414141;
+  border-color: #414141;
+}
+
+/* Addresses */
+.address-field input:checked + label:before {
+  border-color: #36ADB2;
+}
+
+.address-field input:checked + label:after {
+  background-color: #36ADB2;
+}
+
+/* FAQ */
+#faq .card-header .btn:before {
+  color: #36ADB2;
+}
+
+#faq .card-body:before {
+  background-color: #36ADB2;
+}
+
+/* Tracking Orders */
+.order-item.stat1 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, left top, right top, from(#4ec1c7), color-stop(40%, #cecece), to(#cecece));
+  background: linear-gradient(to right, #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#cecece', GradientType=1);
+}
+
+.order-item.stat2 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, left top, right top, from(#4ec1c7), color-stop(25%, #eeaf41), color-stop(85%, #cecece));
+  background: linear-gradient(to right, #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#cecece', GradientType=1);
+}
+
+.order-item.stat3 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, left top, right top, from(#4ec1c7), color-stop(25%, #eeaf41), color-stop(70%, #eeaf41), to(#57b777));
+  background: linear-gradient(to right, #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ec1c7', endColorstr='#57b777', GradientType=1);
+}
+
+.rtl .order-item.stat1 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, right top, left top, from(#4ec1c7), color-stop(40%, #cecece), to(#cecece));
+  background: linear-gradient(to left, #4ec1c7 0%, #cecece 40%, #cecece 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#4ec1c7', GradientType=1);
+}
+
+.rtl .order-item.stat2 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, right top, left top, from(#4ec1c7), color-stop(25%, #eeaf41), color-stop(85%, #cecece));
+  background: linear-gradient(to left, #4ec1c7 0%, #eeaf41 25%, #cecece 85%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cecece', endColorstr='#4ec1c7', GradientType=1);
+}
+
+.rtl .order-item.stat3 .order-sub-head-inner:before {
+  background: #cecece;
+  background: -webkit-gradient(linear, right top, left top, from(#4ec1c7), color-stop(25%, #eeaf41), color-stop(70%, #eeaf41), to(#57b777));
+  background: linear-gradient(to left, #4ec1c7 0%, #eeaf41 25%, #eeaf41 70%, #57b777 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#57b777', endColorstr='#4ec1c7', GradientType=1);
+}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img,
+.header-usr-blk .user-actions img,
+.mega-list-all a i,
+.topbar-first a:hover img,
+.cat-link i {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=colors.css.map */
